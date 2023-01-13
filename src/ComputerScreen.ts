@@ -2,7 +2,7 @@ import CanvasUtil from './CanvasUtil.js';
 import KeyListener from './KeyListener.js';
 import Scene from './Scene.js';
 
-export default class Level1 extends Scene {
+export default class ComputerScreen extends Scene {
 
   // private invaders: invader[];
   private bg: HTMLImageElement;
@@ -31,8 +31,11 @@ export default class Level1 extends Scene {
   }
 
   public render(canvas: HTMLCanvasElement): void {
-    CanvasUtil.drawImage(canvas, this.bg, 
+    CanvasUtil.drawImage(
+      canvas,
+      this.bg,
       (canvas.width / 2) - (this.bg.width / 2),
-      (canvas.height / 2) - (this.bg.height / 2));
+      (canvas.height / 2) - (this.bg.height / 2),
+    );
   }
 }

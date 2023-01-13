@@ -1,4 +1,4 @@
-class FlappyBird {
+export default class Bird {
   private x: number;
   private y: number;
   private velocity: number;

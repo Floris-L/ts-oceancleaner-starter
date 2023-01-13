@@ -1,5 +1,5 @@
 import { GameLoop } from './GameLoop.js';
-import OceanCleanup from './OceanCleanup.js';
+import OceanCleanup from './MalwareMalvin.js';
 
 const oceanCleanup = new OceanCleanup(document.getElementById('game') as HTMLCanvasElement);
 
